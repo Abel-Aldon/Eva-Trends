@@ -1,4 +1,3 @@
-
 * {
     box-sizing: border-box;
     margin: 0;
@@ -10,7 +9,6 @@ body {
     background-color: #f4f4f9;
     color: #333;
 }
-
 
 header {
     background-color: #eeff00;
@@ -32,7 +30,6 @@ header h1 {
     letter-spacing: -1px;
 }
 
-
 header img {
     position: absolute;
     top: 10px;
@@ -41,7 +38,6 @@ header img {
     height: 120px;
     border-radius: 15px;
 }
-
 
 nav {
     margin-top: 15px;
@@ -61,8 +57,6 @@ nav a:hover {
     background-color: #000000;
 }
 
-
-
 main {
     padding: 20px;
 }
@@ -72,14 +66,12 @@ main {
     gap: 20px;
 }
 
-
 .producto {
     position: relative;
     overflow: hidden;
     border-radius: 15px;
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s;
-
 }
 
 .producto:hover {
@@ -96,7 +88,6 @@ main {
 .producto:hover img {
     transform: scale(1.1);
 }
-
 
 .info {
     display: none;
@@ -128,7 +119,6 @@ main {
     align-items: center;
 }
 
-
 .animated-button {
     display: inline-block;
     padding: 10px 20px;
@@ -144,7 +134,6 @@ main {
     color: #333;
 }
 
-
 nav a, .producto {
     transition: box-shadow 0.3s;
 }
@@ -152,7 +141,6 @@ nav a, .producto {
 nav a:hover, .producto:hover {
     box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
 }
-
 
 @media (min-width: 1024px) {
     #productos {
@@ -183,7 +171,6 @@ nav a:hover, .producto:hover {
     }
 }
 
-
 #whatsapp-icon {
     position: fixed;
     bottom: 20px;
@@ -200,11 +187,9 @@ nav a:hover, .producto:hover {
     border-radius: 50%; 
 }
 
-
 #whatsapp-icon:hover {
     transform: scale(1.1); 
 }
-
 
 #social-icons {
     position: absolute;
@@ -225,7 +210,6 @@ nav a:hover, .producto:hover {
     height: 100%;
     border-radius: 50%; 
 }
-
 
 #social-icons a:hover {
     transform: scale(1.1); 
