@@ -23,8 +23,8 @@ header {
     padding: 20px;
     text-align: center;
     position: relative; 
-    height: 100%;
-    width: 100%;
+    max-width: 1000;
+    min-width: 350px;
     border-radius: 5px;
 
 }
@@ -43,7 +43,7 @@ header img {
     position: absolute;
     top: 10px;
     left: 10px;
-    width: 7%; 
+    width: 7.5%; 
     border-radius: 15px;
 }
 
@@ -218,10 +218,6 @@ footer {
 
 @media (max-width: 600px) {
 
-    header img {
-        width: 50px; /* Tamaño del logo reducido en pantallas pequeñas */
-        height: 50px;
-    }
 
     .info {
 
@@ -233,9 +229,12 @@ footer {
 @media (max-width: 700px) {
 
     header img {
+
         width: 50px; /* Tamaño del logo reducido en pantallas pequeñas */
         height: 50px;
+
     }
+
 
     .info {
 
@@ -247,9 +246,12 @@ footer {
 @media (max-width: 800px) {
 
     header img {
+
         width: 50px; /* Tamaño del logo reducido en pantallas pequeñas */
         height: 50px;
+
     }
+
 
     .info {
 
@@ -261,8 +263,10 @@ footer {
 @media (max-width: 900px) {
 
     header img {
-        width: 50px; /* Tamaño del logo reducido en pantallas pequeñas */
-        height: 50px;
+
+        width: 60px; /* Tamaño del logo reducido en pantallas pequeñas */
+        height: 60px;
+
     }
 
     .info {
@@ -275,8 +279,10 @@ footer {
 @media (max-width: 500px) {
 
     header img {
-        width: 50px; /* Tamaño del logo reducido en pantallas pequeñas */
+
+        width: 10px; /* Tamaño del logo reducido en pantallas pequeñas */
         height: 50px;
+
     }
 
     .info {
@@ -289,9 +295,46 @@ footer {
 @media (max-width: 400px) {
 
     header img {
+
         width: 50px; /* Tamaño del logo reducido en pantallas pequeñas */
         height: 50px;
+
     }
+
+    #social-icons {
+        position: absolute;
+        top: 20px;
+        right: 20px; 
+        display: flex;
+        gap: 10px; 
+        margin-top: -1%;
+        flex-direction: column;
+        
+    }
+
+    #social-icons img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%; 
+        margin-left: 55%;
+    }
+
+    .animated-button {
+        display: inline-block;
+        padding: 10px 20px;
+        border: 2px solid #000000;
+        color: #000000;
+        transition: background-color 0.4s, color 0.4s;
+        border-radius: 25px;
+        font-weight: bold;
+        width: 200px;
+    }
+    
+    .animated-button:hover {
+        background-color: #ffbb00;
+        color: #333;
+    }
+
 
     .info {
 
@@ -300,13 +343,16 @@ footer {
     }
 }
 
-@media (max-width: 300px) {
+@media (max-width: 300pxs) {
 
     header img {
+
         width: 50px; /* Tamaño del logo reducido en pantallas pequeñas */
         height: 50px;
-    }
+        
 
+    }
+   
     .info {
 
         font-size: 0.1em;
@@ -317,8 +363,10 @@ footer {
 @media (max-width: 250px) {
 
     header img {
+
         width: 50px; /* Tamaño del logo reducido en pantallas pequeñas */
         height: 50px;
+
     }
 
     .info {
