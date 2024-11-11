@@ -1,0 +1,267 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+
+header {
+    background-color: #eeff00;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    position: relative; 
+    height: auto;
+    width: auto;
+    border-radius: 5px;
+}
+
+header h1 {
+    font-size: 3em;
+    margin: 0;
+    color: #000000;
+    text-shadow: 1px 1px 1px #000000;
+    font-style: italic;
+    letter-spacing: -1px;
+}
+
+
+header img {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 120px;
+    height: 120px;
+    border-radius: 15px;
+}
+
+
+nav {
+    margin-top: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000000;
+    margin: 0 10px;
+    font-size: 1.1em;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #000000;
+}
+
+
+
+main {
+    padding: 20px;
+}
+
+#productos {
+    display: grid;
+    gap: 20px;
+}
+
+
+.producto {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+
+}
+
+.producto:hover {
+    transform: translateY(-10px);
+}
+
+.producto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.producto:hover img {
+    transform: scale(1.1);
+}
+
+
+.info {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.info h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.info p {
+    font-size: 1.1em;
+}
+
+.producto.active .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.animated-button {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid #000000;
+    color: #000000;
+    transition: background-color 0.4s, color 0.4s;
+    border-radius: 25px;
+    font-weight: bold;
+}
+
+.animated-button:hover {
+    background-color: #ffbb00;
+    color: #333;
+}
+
+
+nav a, .producto {
+    transition: box-shadow 0.3s;
+}
+
+nav a:hover, .producto:hover {
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+
+@media (min-width: 1024px) {
+    #productos {
+        grid-template-columns: repeat(4, 1fr); 
+    }
+    .producto {
+        height: 290px;
+        width: 290px;
+    }
+}
+
+@media (max-width: 1023px) and (min-width: 768px) {
+    #productos {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+    .producto {
+        height: 350px;
+    }
+}
+
+@media (max-width: 767px) {
+    #productos {
+        grid-template-columns: 1fr;
+    }
+    .producto {
+        width: 100%;
+        height: 250px;
+    }
+}
+
+
+#whatsapp-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    z-index: 1000;
+    transition: transform 0.3s ease;
+}
+
+#whatsapp-icon img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%; 
+}
+
+
+#whatsapp-icon:hover {
+    transform: scale(1.1); 
+}
+
+
+#social-icons {
+    position: absolute;
+    top: 10px;
+    right: 20px; 
+    display: flex;
+    gap: 10px; 
+}
+
+#social-icons a {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+}
+
+#social-icons img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%; 
+}
+
+
+#social-icons a:hover {
+    transform: scale(1.1); 
+}
+
+@media (max-width: 600px) {
+    header {
+        text-align: left; /* Cambia el alineado del texto para pantallas pequeñas */
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 1.4em; /* Reduce el tamaño de la fuente del título */
+    }
+
+    /* Ajustes del contenedor de íconos sociales en dispositivos pequeños */
+    #social-icons {
+        position: static; /* Permite que los íconos fluyan debajo del título */
+        margin-top: 10px;
+        justify-content: flex-start;
+    }
+
+    /* Ajustes para los enlaces de navegación en dispositivos pequeños */
+    nav {
+        margin-top: 10px;
+        text-align: left;
+    }
+
+    nav a {
+        font-size: 1em; /* Reduce el tamaño de la fuente de los enlaces */
+        padding: 8px 12px;
+    }
+
+    /* Logo en dispositivos pequeños */
+    header img {
+        width: 50px;
+        height: 50px; /* Tamaño del logo reducido en pantallas pequeñas */
+    }
+}
