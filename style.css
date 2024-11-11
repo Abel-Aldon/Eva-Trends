@@ -10,32 +10,40 @@ body {
     color: #333;
 }
 
+h2 {
+
+    font-weight: 600px;
+
+
+}
+
 header {
     background-color: #eeff00;
     color: #fff;
     padding: 20px;
     text-align: center;
     position: relative; 
-    height: auto;
-    width: auto;
+    height: 100%;
+    width: 100%;
     border-radius: 5px;
+
 }
 
 header h1 {
-    font-size: 3em;
+    font-size: 180%;
     margin: 0;
     color: #000000;
     text-shadow: 1px 1px 1px #000000;
     font-style: italic;
     letter-spacing: -1px;
+
 }
 
 header img {
     position: absolute;
     top: 10px;
     left: 10px;
-    width: 120px;
-    height: 120px;
+    width: 7%; 
     border-radius: 15px;
 }
 
@@ -59,11 +67,15 @@ nav a:hover {
 
 main {
     padding: 20px;
+
 }
 
 #productos {
     display: grid;
     gap: 20px;
+    width: 100%;
+    max-width: 100%px;
+    grid-template-columns: repeat(4, 1fr);
 }
 
 .producto {
@@ -72,6 +84,7 @@ main {
     border-radius: 15px;
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s;
+
 }
 
 .producto:hover {
@@ -142,34 +155,6 @@ nav a:hover, .producto:hover {
     box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
 }
 
-@media (min-width: 1024px) {
-    #productos {
-        grid-template-columns: repeat(4, 1fr); 
-    }
-    .producto {
-        height: 290px;
-        width: 290px;
-    }
-}
-
-@media (max-width: 1023px) and (min-width: 768px) {
-    #productos {
-        grid-template-columns: repeat(2, 1fr); 
-    }
-    .producto {
-        height: 350px;
-    }
-}
-
-@media (max-width: 767px) {
-    #productos {
-        grid-template-columns: 1fr;
-    }
-    .producto {
-        width: 100%;
-        height: 250px;
-    }
-}
 
 #whatsapp-icon {
     position: fixed;
@@ -191,13 +176,15 @@ nav a:hover, .producto:hover {
     transform: scale(1.1); 
 }
 
-/* Social icons in the header */
 #social-icons {
     position: absolute;
     top: 20px;
     right: 20px; 
     display: flex;
     gap: 10px; 
+    margin-top: -1%;
+    flex-direction: column;
+    
 }
 
 #social-icons a {
@@ -216,68 +203,8 @@ nav a:hover, .producto:hover {
     transform: scale(1.1); 
 }
 
-@media (max-width: 600px) {
-    header {
-        display: flex; 
-        flex-direction: column; 
-        align-items: center; 
-        justify-content: center; 
-        padding: 10px;
-    }
-
-    header h1 {
-        font-size: 1.4em; 
-        margin-bottom: 10px; 
-    }
-
-
-    
-    #social-icons {
-        display: flex; 
-        gap: 10px;
-    }
-
-    #social-icons a {
-        width: 20px;
-        height: 20px;
-        margin-top: -10px;
-
-    }
-
-  
-    nav {
-        margin-top: 10px;
-        text-align: left;
-    }
-
-    nav a {
-        font-size: 0.5em; 
-        padding: 8px 12px;
-    }
-
-   
+@media (max-width: 768px) {
     header img {
-        width: 80px; 
-        height: 80px;
-        
+      max-width: 1000%; /* Ajusta el ancho máximo según tus necesidades */
     }
-    #productos {
-        grid-template-columns: 1fr;
-    }
-
-    .producto {
-        width: 300px; 
-        height: 300px; 
-        display: flex;
-        justify-content: center; 
-        align-items: center; 
-        margin-left: 100px;
-    }
-
-    .producto img {
-        width: 100%; 
-        height: auto; 
-        object-fit: cover; 
-    }
-
-}
+  }
