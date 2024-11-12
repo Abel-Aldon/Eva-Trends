@@ -43,7 +43,7 @@ header img {
     position: absolute;
     top: 10px;
     left: 10px;
-    width: 100px; 
+    width: 120px; 
     border-radius: 15px;
 }
 
@@ -217,88 +217,27 @@ footer {
     
 }
 
-@media (max-width: 600px) {
 
+@media (max-width: 620px) {
 
-    .info {
+    header h1 {
 
-        font-size: 0.1em;
-
-    }
-}
-
-@media (max-width: 700px) {
-
-    header img {
-
-        width: 50px; 
-        height: 50px;
-
+        font-size: 50px;   
+    
+    
+    
+    
     }
 
 
-    .info {
 
-        font-size: 0.1em;
 
-    }
-}
-
-@media (max-width: 800px) {
 
     header img {
 
         width: 50px;
         height: 50px;
 
-    }
-
-
-    .info {
-
-        font-size: 0.1em;
-
-    }
-}
-
-@media (max-width: 900px) {
-
-    header img {
-
-        width: 60px; 
-        height: 60px;
-
-    }
-
-    .info {
-
-        font-size: 0.1em;
-
-    }
-}
-
-@media (max-width: 500px) {
-
-    header img {
-
-        width: 10px; 
-        height: 50px;
-
-    }
-
-    .info {
-
-        font-size: 0.1em;
-
-    }
-}
-
-@media (max-width: 400px) {
-
-    header img {
-
-        width: 50px;
-        height: 50px;
 
     }
 
@@ -344,35 +283,4 @@ footer {
     }
 }
 
-@media (max-width: 300px) {
 
-    header img {
-
-        width: 50px; 
-        height: 50px;
-        
-
-    }
-   
-    .info {
-
-        font-size: 0.1em;
-
-    }
-}
-
-@media (max-width: 250px) {
-
-    header img {
-
-        width: 50px;
-        height: 50px;
-
-    }
-
-    .info {
-
-        font-size: 0.1em;
-
-    }
-}
