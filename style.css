@@ -1,7 +1,6 @@
 * {
     box-sizing: border-box;
     margin: 0;
-    padding: 0;
     font-family: 'Arial', sans-serif;
 }
 
@@ -223,15 +222,8 @@ footer {
     header h1 {
 
         font-size: 50px;   
-    
-    
-    
-    
+
     }
-
-
-
-
 
     header img {
 
@@ -281,6 +273,33 @@ footer {
         font-size: 0.1em;
 
     }
+
+    .animated-button {
+        display: block;
+        padding: 10px 20px;
+        border: 2px solid #000000;
+        color: #000000;
+        transition: background-color 0.4s, color 0.4s;
+        border-radius: 25px;
+        font-weight: bold;
+        margin-top:  1px;
+        margin-left: 155px;
+    }
+
+    #productos {
+        display: grid;
+        gap: 20px;
+        width: 50%;
+        max-width: 50%;
+        grid-template-columns: repeat(1, 1fr);
+        margin-left: 25%;
+    }
+
+
+
+
+
 }
+
 
 
