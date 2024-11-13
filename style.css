@@ -7,7 +7,7 @@
 body {
     background-color: #f4f4f9;
     color: #333;
-    background-image: url('img/girasol.jpeg');
+    background-image: url('/img/girasoles.jpeg');
     background-size: cover;          
     background-repeat: no-repeat;    
     background-position: center;      
