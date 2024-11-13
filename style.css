@@ -17,7 +17,7 @@ h2 {
 }
 
 header {
-    background-color: #eeff00;
+    background-color: #fffc53;
     color: #fff;
     padding: 20px;
     text-align: center;
@@ -116,12 +116,12 @@ main {
 }
 
 .info h2 {
-    font-size: 1em;
+    font-size: 2em;
     margin-bottom: 10px;
 }
 
 .info p {
-    font-size: 1em;
+    font-size: 2em;
 }
 
 .producto.active .info {
@@ -375,7 +375,7 @@ footer {
 
     .info {
 
-        font-size: 1em;
+        font-size: 0.6em;
 
     }
 
@@ -403,7 +403,7 @@ footer {
 
     .info {
 
-        font-size: 1em;
+        font-size: 0.6em;
 
     }
 
@@ -461,7 +461,7 @@ footer {
 
     .info {
 
-        font-size: 1em;
+        font-size: 0.6em;
 
     }
     
@@ -499,7 +499,7 @@ footer {
 
     .info {
 
-        font-size: 1em;
+        font-size: 0.6em;
 
     }
    
@@ -509,7 +509,7 @@ footer {
 
     .info{
 
-        font-size: 0.7em;
+        font-size: 0.4em;
 
     }
 
