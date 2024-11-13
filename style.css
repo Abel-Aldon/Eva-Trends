@@ -7,6 +7,11 @@
 body {
     background-color: #f4f4f9;
     color: #333;
+    background-image: url('img/girasol.jpeg');
+    background-size: cover;          
+    background-repeat: no-repeat;    
+    background-position: center;      
+    background-attachment: fixed; 
 }
 
 h2 {
