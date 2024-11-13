@@ -139,6 +139,8 @@ main {
     transition: background-color 0.4s, color 0.4s;
     border-radius: 25px;
     font-weight: bold;
+    text-align: center;
+    margin: auto;
 }
 
 .animated-button:hover {
@@ -386,7 +388,7 @@ footer {
 
     header img {
 
-        margin-top: 135px;
+        margin-top: 50px;
 
     }
 
@@ -405,6 +407,23 @@ footer {
 
     }
 
+    header h1 {
+
+        font-size: 1.6em;
+
+
+    }
+    .animated-button {
+        display: block;
+        padding: 5px 5px;
+        border: 2px solid #000000;
+        color: #000000;
+        transition: background-color 0.4s, color 0.4s;
+        border-radius: 25px;
+        font-weight: bold;
+        margin-top:  1px;
+    }
+
 
 }
 
@@ -413,12 +432,9 @@ footer {
 
     header img {
 
-        margin-top: 85px;
+        margin-top: 86px;
     }
 
-
-
-    
     #social-icons {
         position: absolute;
         top: 20px;
@@ -448,7 +464,38 @@ footer {
         font-size: 1em;
 
     }
+    
 
+    
 
 }
+
+@media (min-width: 427px) {
+    .animated-button {
+        display: inline-block;
+        padding: 10px 20px;
+        font-size: 1.2em; 
+        border: 2px solid #000000;
+        color: #000000;
+        border-radius: 25px;
+        font-weight: bold;
+        margin: 1px;
+        text-align: center;
+    }
+
+    header img {
+
+        margin-top: 1px;
+        margin-left: -10px;
+
+    }
+
+    header h1 {
+
+        font-size: 1.7em;
+
+
+    }
+
     
+}
