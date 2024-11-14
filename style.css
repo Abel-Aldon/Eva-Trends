@@ -2,9 +2,9 @@
     box-sizing: border-box;
     margin: 0;
     font-family: 'Arial', sans-serif;
-}
-
-body {
+  }
+  
+  body {
     background-color: #f4f4f9;
     color: #333;
     background-image: url('/img/girasoles.jpeg');
@@ -12,16 +12,30 @@ body {
     background-repeat: no-repeat;    
     background-position: center;      
     background-attachment: fixed; 
-}
-
-h2 {
-
+  }
+  
+  h2 {
+  
     font-weight: 600px;
-
-
-}
-
-header {
+  
+  }
+  
+  hr {
+  
+    border: 0;
+    height: 2px;
+    background-color: #000000; 
+    margin: 20px 0;   
+  
+  }
+  
+  .btn {
+  
+    background-color: #fffc53;
+    margin-top: -15px;
+  }
+  
+  header {
     background-color: #fffc53;
     color: #fff;
     padding: 20px;
@@ -30,32 +44,38 @@ header {
     max-width: 1000;
     min-width: 350px;
     border-radius: 5px;
-
-}
-
-header h1 {
+    border-bottom: 2px solid #000000;
+    display: flex; 
+    align-items: center; 
+    justify-content: flex-start;
+  }
+  
+  header h1 {
     font-size: 180%;
     margin: 0;
     color: #000000;
     text-shadow: 1px 1px 1px #000000;
     font-style: italic;
     letter-spacing: -1px;
-
-}
-
-header img {
+    margin-left: 80px;
+  }
+  
+  header img {
     position: absolute;
-    top: 10px;
+    top: 0px;
     left: 10px;
-    width: 120px; 
+    width: 85px; 
     border-radius: 15px;
-}
-
-nav {
+  }
+  
+  nav {
+    display: flex;
+    justify-content: center;
     margin-top: 15px;
-}
-
-nav a {
+  
+  }
+  
+  nav a {
     text-decoration: none;
     color: #000000;
     margin: 0 10px;
@@ -63,50 +83,51 @@ nav a {
     padding: 10px 15px;
     border-radius: 5px;
     transition: background-color 0.3s;
-}
-
-nav a:hover {
+    margin-right: 100px;
+  
+  }
+  
+  nav a:hover {
     background-color: #000000;
-}
-
-main {
+  }
+  
+  main {
     padding: 20px;
-
-}
-
-#productos {
+  }
+  
+  #productos {
     display: grid;
     gap: 20px;
     width: 100%;
     max-width: 100%;
     grid-template-columns: repeat(4, 1fr);
-}
-
-.producto {
+  }
+  
+  .producto {
     position: relative;
     overflow: hidden;
     border-radius: 15px;
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s;
-
-}
-
-.producto:hover {
+  
+  }
+  
+  .producto:hover {
     transform: translateY(-10px);
-}
-
-.producto img {
+  }
+  
+  .producto img {
     width: 100%;
     height: 100% ;
     object-fit: cover;
     transition: transform 0.3s ease;
-}
-
-.producto:hover img {
+  }
+  
+  .producto:hover img {
     transform: scale(1.1);
-}
-
-.info {
+  }
+  
+  .info {
     display: none;
     position: absolute;
     top: 0;
@@ -118,25 +139,27 @@ main {
     padding: 20px;
     text-align: center;
     border-radius: 15px;
-}
-
-.info h2 {
+  }
+  
+  
+  
+  .info h2 {
     font-size: 2em;
     margin-bottom: 10px;
-}
-
-.info p {
+  }
+  
+  .info p {
     font-size: 2em;
-}
-
-.producto.active .info {
+  }
+  
+  .producto.active .info {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-.animated-button {
+  }
+  
+  .animated-button {
     display: inline-block;
     padding: 10px 20px;
     border: 2px solid #000000;
@@ -144,25 +167,25 @@ main {
     transition: background-color 0.4s, color 0.4s;
     border-radius: 25px;
     font-weight: bold;
-    text-align: center;
-    margin: auto;
-}
-
-.animated-button:hover {
+  
+  }
+  
+  
+  .animated-button:hover {
     background-color: #ffbb00;
     color: #333;
-}
-
-nav a, .producto {
+  }
+  
+  nav a, .producto {
     transition: box-shadow 0.3s;
-}
-
-nav a:hover, .producto:hover {
+  }
+  
+  nav a:hover, .producto:hover {
     box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
-}
-
-
-#whatsapp-icon {
+  }
+  
+  
+  #whatsapp-icon {
     position: fixed;
     bottom: 20px;
     right: 20px;
@@ -170,48 +193,48 @@ nav a:hover, .producto:hover {
     height: 50px;
     z-index: 1000;
     transition: transform 0.3s ease;
-}
-
-#whatsapp-icon img {
+  }
+  
+  #whatsapp-icon img {
     width: 100%;
     height: 100%;
     border-radius: 50%; 
-}
-
-#whatsapp-icon:hover {
+  }
+  
+  #whatsapp-icon:hover {
     transform: scale(1.1); 
-}
-
-#social-icons {
+  }
+  
+  #social-icons {
     position: absolute;
     top: 20px;
     right: 20px; 
     display: flex;
     gap: 10px; 
     margin-top: -1%;
-    flex-direction: column;
+    flex-direction: row;
     
-}
-
-#social-icons a {
+  }
+  
+  #social-icons a {
     width: 30px;
     height: 30px;
     transition: transform 0.3s ease;
-}
-
-#social-icons img {
+  }
+  
+  #social-icons img {
     width: 100%;
     height: 100%;
     border-radius: 50%; 
     min-width: 3px;
-}
-
-#social-icons a:hover {
+  }
+  
+  #social-icons a:hover {
     transform: scale(1.1); 
-}
-
+  }
+  
     
-footer {
+  footer {
     position: relative;
     margin-top: 10px;
     height: 100%; 
@@ -221,26 +244,27 @@ footer {
     text-align: center;
     color: #fff;
     
-}
-
-
-@media (max-width: 620px) {
-
+  }
+  
+  
+  @media (max-width: 620px) {
+  
     header h1 {
-
+  
         font-size: 50px;
         text-align: center;  
-
+        margin-left: 50px;
+  
     }
-
+  
     header img {
-
-        width: 50px;
-        height: 50px;
-
-
+  
+        width: 70px;
+        height: 70px;
+  
+  
     }
-
+  
     #social-icons {
         position: absolute;
         top: 20px;
@@ -248,23 +272,23 @@ footer {
         display: flex;
         gap: 10px; 
         margin-top: -1%;
-        flex-direction: column;
+        flex-direction: row;
         
     }
-
+  
     #social-icons img {
         width: 100%;
         height: 100%;
         border-radius: 50%; 
         margin-left: 55%;
     }
-
+  
     .info {
-
+  
         font-size: 0.1em;
-
+  
     }
-
+  
     .animated-button {
         display: block;
         padding: 10px 20px;
@@ -276,7 +300,7 @@ footer {
         margin-top:  1px;
         margin-left: 155px;
     }
-
+  
     #productos {
         display: grid;
         gap: 20px;
@@ -285,45 +309,58 @@ footer {
         grid-template-columns: repeat(1, 1fr);
         margin-left: 25%;
     }
-
-}
-
-@media (max-width: 425px) {
-
+  
+  }
+  
+  @media (max-width: 425px) {
+  
+    
+  
+  
     header h1 {
-
-        font-size: 50px;
-        text-align: center;  
-
+  
+        font-size: 2em;
+        margin-left: 60px;
+        
     }
-
+    
+    header {
+  
+      display: flex; 
+      align-items: center; 
+      justify-content: flex-start;
+  
+    }
+    
+  
     header img {
-
+  
         width: 60px;
         height: 60px;
-        margin-top: 20%;
-
-
+        margin-top: 2%;
+  
+  
     }
-
+  
     #social-icons {
         position: absolute;
-        top: 20px;
+        top: 10px;
         right: 20px; 
         display: flex;
         gap: 10px; 
         margin-top: -1%;
-        flex-direction: column;
+        flex-direction: row;
+  
         
     }
-
+  
     #social-icons img {
         width: 100%;
         height: 100%;
         border-radius: 50%; 
         margin-left: 55%;
     }
-
+  
     .animated-button {
         display: inline-block;
         padding: 10px 20px;
@@ -341,14 +378,14 @@ footer {
         background-color: #ffbb00;
         color: #333;
     }
-
-
+  
+  
     .info {
-
+  
         font-size: 0.1em;
-
+  
     }
-
+  
     .animated-button {
         display: block;
         padding: 10px 20px;
@@ -359,7 +396,7 @@ footer {
         font-weight: bold;
         margin-top:  1px;
     }
-
+  
     #productos {
         display: grid;
         gap: 20px;
@@ -368,55 +405,55 @@ footer {
         grid-template-columns: repeat(1, 1fr);
         margin-left: 25%;
     }
-
+  
     .producto {
-
+  
         width: 300px;
         height: 300px;
         margin-left: -60px;
-
-
+  
+  
     }
-
+  
     .info {
-
+  
         font-size: 0.6em;
-
+  
     }
-
-
-
-}
-
-
-@media (max-width: 375px) {
-
+  
+  
+  
+  }
+  
+  
+  @media (max-width: 375px) {
+  
     header img {
-
-        margin-top: 50px;
-
+  
+        margin-top: 5px;
+  
     }
-
+  
     .producto {
-
+  
         width: 300px;
         height: 300px;
         margin-left: -60px;
-
-
+  
+  
     }
-
+  
     .info {
-
+  
         font-size: 0.6em;
-
+  
     }
-
+  
     header h1 {
-
+  
         font-size: 1.6em;
-
-
+  
+  
     }
     .animated-button {
         display: block;
@@ -428,18 +465,38 @@ footer {
         font-weight: bold;
         margin-top:  1px;
     }
-
-
-}
-
-@media (max-width: 320px) {
-
-
-    header img {
-
-        margin-top: 86px;
+  
+  
+  }
+  
+  @media (max-width: 320px) {
+  
+  
+    hr {
+  
+      width: 350px;
+  
     }
-
+    
+    .btn {
+  
+      width: 350px;
+  
+    }
+  
+  
+    .animated-button {
+  
+      padding: 5px 10px;
+  
+    }
+  
+  
+    header img {
+  
+        margin-top: 3px;
+    }
+  
     #social-icons {
         position: absolute;
         top: 50px;
@@ -449,33 +506,50 @@ footer {
         flex-direction: column;
         
     }
-
+  
     .producto img {
         object-fit: cover;
         transition: transform 0.3s ease;
     }
     
     .producto {
-
+  
         width: 300px;
         height: 300px;
         margin-left: -60px;
-
-
+  
+  
     }
-
+  
     .info {
-
+  
         font-size: 0.6em;
-
+  
     }
-    
-
-    
-
-}
-
-@media (min-width: 427px) {
+  
+    #social-icons {
+      position: absolute;
+      top: 10px;
+      right: px; 
+      display: flex;
+      gap: 10px; 
+      margin-top: -1%;
+      flex-direction: row;
+  
+      
+  }
+  
+  #social-icons img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%; 
+      margin-left: 55%;
+  }
+  
+  
+  }
+  
+  @media (min-width: 427px) {
     .animated-button {
         display: inline-block;
         padding: 10px 20px;
@@ -487,35 +561,36 @@ footer {
         margin: 1px;
         text-align: center;
     }
-
+  
     header img {
-
+  
         margin-top: 1px;
         margin-left: -10px;
-
+  
     }
-
+  
     header h1 {
-
+  
         font-size: 1.7em;
-
-
+  
+  
     }
-
+  
     .info {
-
+  
         font-size: 0.6em;
-
+  
     }
    
-}
-
-@media (min-width: 768px) {
-
+  }
+  
+  @media (min-width: 768px) {
+  
     .info{
-
+  
         font-size: 0.4em;
-
+  
     }
-
-}
+  
+  }
+  
