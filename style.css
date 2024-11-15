@@ -211,14 +211,13 @@ main {
 
 footer {
   position: relative;
-  margin-top: 10px;
-  height: 40px; 
+  height: 50px; 
   padding:5px 0px;
   clear: both;
   background: hsla(0, 0%, 5%, 0.919);
   text-align: center;
   color: #fff;
-  
+  width: 100%;
 }
 
 @media (max-width: 620px) {
@@ -356,6 +355,14 @@ footer {
     margin-left: 55%;
 }
 
+footer {
+
+  width: 486px;
+  
+  
+  
+  }
+  
 
 }
 
@@ -363,7 +370,7 @@ footer {
 
   header{
 
-      width: 444px;
+      width: 445px;
 
   }
 
@@ -426,6 +433,15 @@ footer {
     margin-left: 55%;
 }
 
+footer {
+
+  width: 445px;
+  
+  
+  
+  }
+  
+  
 
 }
 
@@ -472,6 +488,17 @@ footer {
   }
 
 }
+
+footer {
+
+  width: 360px;
+  
+  
+  
+  }
+  
+
+
 
 
 
