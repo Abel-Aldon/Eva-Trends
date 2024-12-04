@@ -230,6 +230,10 @@ footer {
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .info h2, .info p {
+    font-size: 1em;
+  }
+
   #social-icons {
     flex-direction: column;
     gap: 20px;
